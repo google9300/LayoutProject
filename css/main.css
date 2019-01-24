@@ -19,6 +19,8 @@ nav {
     grid-column: 1/4;
     grid-row: 1/2;
     background-color: white;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 nav ul {
@@ -62,4 +64,17 @@ footer {
     background-color: white;
     grid-column: 1/4;
     grid-row: 3/4;
+    display: flex;
+}
+footer div {
+    text-align: center;
+    padding: 5px;
+}
+.rightSidebar {
+    display: flex;
+    flex-direction: column;
+}
+
+.rightSidebar p {
+    flex: 1;
 }
