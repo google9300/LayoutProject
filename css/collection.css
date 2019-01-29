@@ -3,11 +3,13 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
 }
- img{
+
+img {
     height: 200px;
 }
+
 .collection div a {
-    padding: 15px;
+    padding: 10px;
     text-decoration: none;
     text-align: center;
 }
@@ -15,4 +17,8 @@
 .collection div {
     display: flex;
     justify-content: center;
+}
+
+.collection p {
+    font-size: 12px;
 }
