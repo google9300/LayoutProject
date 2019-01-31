@@ -1,3 +1,13 @@
+@media only screen and (max-width: 700px) {
+    .collection {
+        display: flex;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+}
+@media only screen and (min-width: 700px) {
 
 .collection {
     display: grid;
@@ -9,7 +19,7 @@
     "product9 product10 product11 product12" 
     "product13 product14 product15 product16";
 }
-
+}
 
 img {
     height: 200px;
