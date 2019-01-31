@@ -11,41 +11,47 @@
 
 <body>
     <div class="grid">
-        <nav>
-            <ul>
-                <img src="../Pictures/omegaLogo.png" alt="">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="collection.html">Collection</a></li>
-                <li><a href="history.html">History</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
-        <main>
-            <aside class="leftSidebar">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum sequi
-                impedit ab, similique amet eum eius assumenda quod quo autem fugit dolores iure adipisci soluta vitae,
-                quaerat velit temporibus debitis.</aside>
-            <article>
-                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi libero quos eligendi adipisci
-                    reiciendis quasi sapiente fugit sed, veritatis ipsum, voluptas numquam qui perspiciatis minus hic
-                    minima. Earum, fugiat totam.
-                    Quis, quod sapiente reprehenderit accusamus deserunt magni ipsum quo placeat quasi architecto
-                    possimus, aliquam nulla sequi voluptatum autem. Saepe ab quia odio omnis animi eaque cupiditate
-                    totam illo dicta. Animi.
-                    Delectus esse sunt, nostrum exercitationem fugiat rem dolore necessitatibus! Cumque perspiciatis
-                    incidunt quibusdam ut provident fugit nulla, ipsa, unde illum excepturi, doloremque animi facilis
-                    voluptatem? Veniam ut laboriosam cum omnis.
-                    Maxime quasi delectus provident ad totam vitae a numquam ea ratione molestiae cumque nisi nemo
-                    laborum, cum nobis natus voluptatum laudantium! Asperiores atque quaerat ducimus accusantium nemo
-                    inventore? Dignissimos, sapiente?</div>
-            </article>
-            <aside class="rightSidebar">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita beatae quam at dicta fugit quasi
-                    perspiciatis quis. In, eaque maxime nemo, numquam, vitae repudiandae voluptates culpa sed odit
-                    rerum blanditiis.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt veniam labore quibusdam debitis
-                    iste ad a numquam? Quam, facere architecto? Delectus ex quo earum pariatur. Animi perferendis velit
-                    natus consectetur?</p>
-            </aside>
+            <nav>
+                    <!-- Responsive Hamburger Menu -->
+                    <div class="hamburgerContainer">
+                        <a href="../index.html" class="logo"><img src="/Pictures/omegaLogo.png" alt=""></a>
+                        <input class="menu-btn" type="checkbox" id="menu-btn" />
+                        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                        <ul class="menu">
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../html/collection.html">Collection</a></li>
+                            <li><a href="../html/history.html">History</a></li>
+                            <li><a href="../html/contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <!-- End of Menu -->
+                    <ul class="stdMenu">
+                        <img src="../Pictures/omegaLogo.png" alt="">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="/html/collection.html">Collection</a></li>
+                        <li><a href="/html/history.html">History</a></li>
+                        <li><a href="/html/contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+        <main class="mainContact">
+            <div class="contactFormWrap">
+                Contact Us
+                <form action=""class="contactForm">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="tel" placeholder="Telephone">
+                <textarea cols="30" rows="10" placeholder="Your message ..."></textarea>
+            </form>
+            <button>Send</button>
+            </div>
+            <div class="contactInfo">
+                <h2>Contact Information</h2>
+                <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus, quisquam illum pariatur a perferendis adipisci nesciunt cupiditate deserunt consequatur obcaecati excepturi animi autem in accusantium natus quidem, at nulla doloribus!
+                Possimus alias nulla corrupti qui numquam praesentium expedita atque ullam iste cupiditate vero quis excepturi temporibus ratione eaque, dolor voluptate cum a quas? Autem modi dolorum maiores veritatis nostrum quidem.
+                Esse quas laborum iure id ratione iusto eveniet facere enim incidunt eum. Nam praesentium voluptatum unde laborum vel, quia velit, ratione illo est corporis quaerat eveniet quo debitis, similique saepe!
+            </p>
+            </div>
         </main>
         <footer>
             <div>Copyright. Lorem ipsum dolor sit amet.</div>

@@ -11,17 +11,34 @@
 </head>
 
 <body>
+    <!-- Div wrap grid -->
     <div class="grid">
+        <!-- Nav Bar Element -->
         <nav>
-            <ul>
-                <img src="../Pictures/omegaLogo.png" alt="">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="collection.html">Collection</a></li>
-                <li><a href="history.html">History</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
+                <!-- Responsive Hamburger Menu -->
+                <div class="hamburgerContainer">
+                    <a href="../index.html" class="logo"><img src="/Pictures/omegaLogo.png" alt=""></a>
+                    <input class="menu-btn" type="checkbox" id="menu-btn" />
+                    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                    <ul class="menu">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../html/collection.html">Collection</a></li>
+                        <li><a href="../html/history.html">History</a></li>
+                        <li><a href="../html/contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <!-- End of Menu -->
+                <ul class="stdMenu">
+                    <img src="../Pictures/omegaLogo.png" alt="">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="/html/collection.html">Collection</a></li>
+                    <li><a href="/html/history.html">History</a></li>
+                    <li><a href="/html/contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        <!-- End of Navbar -->
         <main class="collection">
+            <!-- Product Catalogue  -->
             <div class="product1">
                 <a href="#" onclick="alert('Product1 Clicked')">
                     <h3>Watch1</h3>
@@ -134,14 +151,16 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, molestias!</p>
                 </a>
             </div>
-
+            <!-- End of product catalogue  -->
         </main>
+        <!-- Footer element -->
         <footer>
             <div>Copyright. Lorem ipsum dolor sit amet.</div>
             <div class="empty"></div>
             Follow Us
             <div><img src="../Pictures/facebookLogo.png" alt=""> <img src="../Pictures/twitterLogo.png" alt=""></div>
         </footer>
+        <!-- End of footer -->
     </div>
 </body>
 

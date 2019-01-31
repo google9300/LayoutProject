@@ -1,8 +1,15 @@
+
 .collection {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "product1 product2 product3 product4" 
+    "product5 product6 product7 product8" 
+    "product9 product10 product11 product12" 
+    "product13 product14 product15 product16";
 }
+
 
 img {
     height: 200px;
@@ -22,3 +29,56 @@ img {
 .collection p {
     font-size: 12px;
 }
+.buttonHolder {
+    grid-area: buttonHolder;
+}
+
+.product1 {
+    grid-area: product1;
+}
+.product2 {
+    grid-area: product2;
+}
+.product3 {
+    grid-area: product3;
+}
+.product4 {
+    grid-area: product4;
+}
+.product5 {
+    grid-area: product5;
+}
+.product6 {
+    grid-area: product6;
+}
+.product7 {
+    grid-area: product7;
+}
+.product8 {
+    grid-area: product8;
+}
+.product9 {
+    grid-area: product9;
+}
+.product10 {
+    grid-area: product10;
+}
+.product11 {
+    grid-area: product11;
+}
+.product12 {
+    grid-area: product12;
+}
+.product13 {
+    grid-area: product13;
+}
+.product14 {
+    grid-area: product14;
+}
+.product15 {
+    grid-area: product15;
+}
+.product16 {
+    grid-area: product16;
+}
+

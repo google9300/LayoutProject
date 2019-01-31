@@ -3,20 +3,93 @@
     padding: 0;
 }
 
+@media only screen and (min-width: 600px) {
+    .hamburgerContainer {
+        display: none;
+    }
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        height: 100%;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    nav ul li {
+        text-align: center;
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    nav a {
+        /* ANIMATION Preset CSS  */
+        margin: 0px 10px;
+        padding: 10px 10px;
+        position: relative;
+        z-index: 0;
+        cursor: pointer;
+        /* END of animation preset CSS*/
+    
+        display: block;
+        text-decoration: none;
+        color: black;
+    }
+    
+    /* ANIMATION CSS */
+    /* Top and Bottom borders go out */
+    nav ul a:before,
+    nav ul a:after {
+        position: absolute;
+        left: 0px;
+        width: 100%;
+        height: 2px;
+        background: black;
+        content: "";
+        opacity: 0;
+        transition: all 0.3s;
+    }
+    
+    nav ul a:before {
+        top: 0px;
+        transform: translateY(10px);
+    }
+    
+    nav ul a:after {
+        bottom: 0px;
+        transform: translateY(-10px);
+    }
+    
+    nav ul a:hover:before,
+    nav ul a:hover:after {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    
+    /* END OF ANIMATION CSS */
+}
+
+
+
 body {
     background-color: silver;
 }
+
 nav img {
     height: 25px;
     padding-left: 15px;
 }
+
 .grid {
     height: 100vh;
     /* width: 100vw; */
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 50px 1fr 50px;
-    grid-gap: 1em;
+    grid-template-rows: 75px 1fr 50px;
+    /* grid-gap: 1em; */
 }
 
 nav {
@@ -24,70 +97,10 @@ nav {
     grid-row: 1/2;
     background-color: white;
     display: flex;
+    border-bottom: solid black 0.1em;
 }
 
-nav ul {
-    list-style-type: none;
-    display: flex;
-    height: 100%;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
 
-}
-
-nav ul li {
-    text-align: center;
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-nav a {
-    /* ANIMATION Preset CSS  */
-    margin: 0px 10px;
-    padding: 10px 10px;
-    position: relative;
-    z-index: 0;
-    cursor: pointer;
-    /* END of animation preset CSS*/
-    display: block;
-    text-decoration: none;
-    color: black;
-}
-
-/* ANIMATION CSS */
-/* Top and Bottom borders go out */
-nav ul a:before,
-nav ul a:after {
-    position: absolute;
-    left: 0px;
-    width: 100%;
-    height: 2px;
-    background: black;
-    content: "";
-    opacity: 0;
-    transition: all 0.3s;
-}
-
-nav ul a:before {
-    top: 0px;
-    transform: translateY(10px);
-}
-
-nav ul a:after {
-    bottom: 0px;
-    transform: translateY(-10px);
-}
-
-nav ul a:hover:before,
-nav ul a:hover:after {
-    opacity: 1;
-    transform: translateY(0px);
-}
-
-/* END OF ANIMATION CSS */
 
 main {
     grid-column: 1/4;
@@ -101,21 +114,25 @@ main {
 
 
 }
+
 @keyframes fadeAndScale {
     from {
         opacity: 0;
         transform: scale(.9, .9);
     }
+
     to {
         opacity: 1;
         transform: scale(1, 1);
     }
 }
-main h1, h2, h3 {
-color:#c40d2e;
-}
-article h1 {
+
+main h1,
+h2,
+h3 {
+    color: #c40d2e;
     text-align: center;
+
 }
 
 main article {
@@ -123,7 +140,7 @@ main article {
     font-size: 14px;
 }
 
-article div img {
+article img {
     float: right;
     height: 250px;
 }
@@ -144,6 +161,7 @@ footer {
     grid-row: 3/4;
     display: flex;
     align-items: center;
+    border-top: solid black 0.1em;
 }
 
 footer div {
@@ -164,6 +182,196 @@ footer div {
 .empty {
     flex: 2;
 }
+
 footer div img {
     height: 25px;
 }
+
+
+@media only screen and (max-width: 600px) {
+    /* NOT READY NAV BAR  */
+/* main {
+    flex-direction: column;
+} */
+.stdMenu {
+    display: none;
+}
+
+.hamburgerContainer {
+    background-color: #fff;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    /* position: fixed; */
+    width: 100%;
+    z-index: 3;
+  }
+  
+  .hamburgerContainer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  
+  .hamburgerContainer li a {
+    display: block;
+    padding: 20px 20px;
+    border-right: 1px solid #f4f4f4;
+    text-decoration: none;
+    color: #c40d2e;
+  }
+  
+  .hamburgerContainer li a:hover,
+  .hamburgerContainer .menu-btn:hover {
+    background-color: #f4f4f4;
+  }
+  
+  .hamburgerContainer .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  /* menu */
+  
+  .hamburgerContainer .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+  
+  /* menu icon */
+  
+  .hamburgerContainer .menu-icon {
+    cursor: pointer;
+    /* INLINE BLOCK MIGHT BE REMOVED */
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .hamburgerContainer .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+  
+  .hamburgerContainer .menu-icon .navicon:before,
+  .hamburgerContainer .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .hamburgerContainer .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .hamburgerContainer .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
+  /* menu btn */
+  
+  .hamburgerContainer .menu-btn {
+    display: none;
+  }
+  
+  .hamburgerContainer .menu-btn:checked ~ .menu {
+    max-height: 240px;
+  }
+  
+  .hamburgerContainer .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .hamburgerContainer .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .hamburgerContainer .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .hamburgerContainer .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .hamburgerContainer .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+  
+  /* 48em = 768px */
+  
+  @media (min-width: 48em) {
+    .hamburgerContainer li {
+      float: left;
+    }
+    .hamburgerContainer li a {
+      padding: 20px 30px;
+    }
+    .hamburgerContainer .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .hamburgerContainer .menu-icon {
+      display: none;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+/* ONLY FOR HISTORY TAB */
+.leftPic{
+float: left;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+}
+.contactForm input, textarea {
+    margin: 5px;
+}
+.contactFormWrap button {
+    padding: 5px;
+    margin: 5px;
+}
+.mainContact {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.contactFormWrap {
+    text-align: center;
+    border: 1px black solid;
+    border-radius: 5px;
+    box-shadow: 1em 1em 5px grey;
+    margin: 1.3em; 
+}
+.contactFormWrap, .contactInfo {
+    flex: 1;
+}
+
+/* HISTORY TAB */
