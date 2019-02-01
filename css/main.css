@@ -162,17 +162,20 @@ footer {
   grid-row: 3/4;
   display: flex;
   align-items: center;
-  justify-content: center;
   border-top: solid black 0.1em;
 }
 
 /* Footer is divided into 3 divs /One is used as span/ */
 footer div {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 5px;
   font-size: 12px;
 }
-
+footer div img {
+  margin: 5px;
+}
 .rightSidebar {
   display: flex;
   flex-direction: column;
