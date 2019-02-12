@@ -1,0 +1,40 @@
+main div {
+  flex: 1;
+}
+@media only screen and (max-width: 700px) {
+  img {
+    display: block;
+    margin: auto;
+    height: 450px;
+  }
+}
+@media only screen and (min-width: 700px) {
+  img {
+    display: block;
+    margin: auto;
+    height: 600px;
+  }
+}
+.productInfoMain {
+  margin: auto;
+  text-align: center;
+}
+h5 {
+  font-size: 32px;
+  margin-top: 50px;
+}
+.productInfoMain p {
+    color: #555;
+  margin-top: 30px;
+  border-top: 0.5px #e2e2e2 solid;
+  border-bottom: 0.5px #e2e2e2 solid;
+}
+.productInfoMain h4 {
+  margin-bottom: 5px;
+}
+button {
+    margin-top: 50px;
+    padding: 10px;
+    border-radius: 15px;
+    color: green;
+}

@@ -2,13 +2,17 @@
   margin: 0;
   padding: 0;
 }
-
+body {
+  font-family: 'Roboto', sans-serif;
+}
 /* Mainly adding the menu for full size screen */
 @media only screen and (min-width: 600px) {
   .hamburgerContainer {
     display: none;
   }
-
+  nav {
+    border-bottom: solid black 0.1em;
+  }
   nav ul {
     list-style-type: none;
     display: flex;
@@ -73,11 +77,6 @@
   /* END OF ANIMATION CSS */
 }
 
-/* Body color changed for testing purpose */
-body {
-  background-color: black;
-}
-
 /* Logo  */
 nav img {
   height: 25px;
@@ -100,11 +99,11 @@ nav {
   grid-row: 1/2;
   background-color: white;
   display: flex;
-  border-bottom: solid black 0.1em;
 }
 
 /* Main section  */
 main {
+  text-align: justify;
   grid-column: 1/4;
   grid-row: 2/3;
   background-color: white;
@@ -214,6 +213,7 @@ footer div img {
     /* position: fixed; */
     width: 100%;
     z-index: 3;
+    position: fixed;
   }
 
   .hamburgerContainer ul {
@@ -370,8 +370,8 @@ textarea {
 }
 
 .mainContact {
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
   display: flex;
 }
 
@@ -383,7 +383,9 @@ textarea {
   margin: 1.3em;
 }
 
-.contactFormWrap,
+.contactFormWrap{
+  flex: 2;
+}
 .contactInfo {
   flex: 1;
 }
